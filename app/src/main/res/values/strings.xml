@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CDACPsychiatricChatbot</string>
+    <string name="askAge">Enter your age</string>
+    <string name="askGender">Enter your gender</string>
+    <string name="askSmellTaste">Do you have the sense of smell and taste?</string>
+    <string name="askCough">Do you have a severe or significant cough?</string>
+    <string name="askFatigue">Are your feeling fatigued?</string>
+    <string name="askSkipMeal">Have your skipped a meal in the last week?</string>
+</resources>
