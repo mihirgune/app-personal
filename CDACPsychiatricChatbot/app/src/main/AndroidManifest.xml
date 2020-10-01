@@ -19,7 +19,6 @@
         <activity android:name=".LoginPage" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".BotTesterActivity" />
         <activity android:name=".CovidResultActivity" />
         <activity android:name=".CovidTesterActivity2" />
         <activity android:name=".CovidTesterActivity" />
