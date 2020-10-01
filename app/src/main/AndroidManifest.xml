@@ -14,7 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".LoginPage"></activity>
+        <activity android:name=".Phq_9TesterActivity"></activity>
+        <activity android:name=".Phq_9DeciderActivity" />
+        <activity android:name=".LoginPage" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".Phq_9" />
         <activity android:name=".HomeActivity" />

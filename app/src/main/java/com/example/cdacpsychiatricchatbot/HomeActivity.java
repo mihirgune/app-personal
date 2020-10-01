@@ -38,7 +38,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void openCOVID() {
-        Intent intent = new Intent(this, CovidResultActivity.class);
+        Intent intent = new Intent(this, CovidTesterActivity.class);
         startActivity(intent);
     }
 }
