@@ -17,31 +17,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        login = (Button) findViewById(R.id.login);
-        signUp = (Button) findViewById(R.id.signUp);
+        DefaultPage defaultFragment = new DefaultPage();
+        getSupportFragmentManager().beginTransaction().replace(R.id.mainContainer,defaultFragment).commit();
 
-        login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openLogin();
-            }
-        });
 
-        signUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openSignUp();
-            }
-        });
     }
 
-    private void openLogin() {
-        Intent intent = new Intent(this, LoginPage.class);
-        startActivity(intent);
-    }
-
-    private void openSignUp() {
-        Intent intent = new Intent(this, SignUpActivity.class);
-        startActivity(intent);
-    }
 }

@@ -1,19 +1,36 @@
 package com.example.cdacpsychiatricchatbot;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 
-public class LoginPage extends AppCompatActivity {
+import androidx.fragment.app.Fragment;
 
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
 
+public class LoginPage extends Fragment {
+
+    private Button button2;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_page);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View v =  inflater.inflate(R.layout.fragment_login_page, container, false);
 
-        Intent intent = new Intent(this, HomeActivity.class);
+        button2 = (Button) v.findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMain();
+            }
+        });
+        return v;
+    }
+
+    private void openMain() {
+        Intent intent = new Intent(getActivity(),HomeActivity.class);
         startActivity(intent);
     }
 }

@@ -16,11 +16,7 @@
         android:usesCleartextTraffic="true">
         <activity android:name=".Phq_9TesterActivity"></activity>
         <activity android:name=".Phq_9DeciderActivity" />
-        <activity android:name=".LoginPage" />
-        <activity android:name=".SignUpActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".CovidResultActivity" />
-        <activity android:name=".CovidTesterActivity2" />
         <activity android:name=".CovidTesterActivity" />
         <activity android:name=".ChatbotActivity" />
         <activity android:name=".MainActivity">

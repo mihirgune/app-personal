@@ -6,4 +6,6 @@
     <string name="askCough">Do you have a severe or significant cough?</string>
     <string name="askFatigue">Are your feeling fatigued?</string>
     <string name="askSkipMeal">Have your skipped a meal in the last week?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

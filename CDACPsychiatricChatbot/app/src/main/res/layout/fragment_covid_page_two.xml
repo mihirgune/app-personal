@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/allBackground"
-    tools:context=".CovidTesterActivity2">
+    tools:context=".CovidPageTwo">
 
     <TextView
-        android:id="@+id/questions2"
+        android:id="@+id/questionsTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-smallcaps"
@@ -17,28 +17,31 @@
         android:textAlignment="center"
         android:textColor="#70ADB5"
         android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonOne"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFirst"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.491" />
 
     <Button
-        android:id="@+id/buttonOne"
+        android:id="@+id/buttonFirst"
         android:layout_width="140dp"
         android:layout_height="64dp"
         android:background="@drawable/rounded_blue_button"
         android:fontFamily="sans-serif-smallcaps"
         android:text="Enter"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonTwo"
-        app:layout_constraintEnd_toStartOf="@+id/buttonTwo"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonSecond"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSecond"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/buttonTwo"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/buttonSecond"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="449dp" />
 
     <Button
-        android:id="@+id/buttonTwo"
+        android:id="@+id/buttonSecond"
         android:layout_width="140dp"
         android:layout_height="64dp"
         android:background="@drawable/rounded_blue_button"
@@ -47,7 +50,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/buttonOne"
-        app:layout_constraintTop_toBottomOf="@+id/questions2" />
+        app:layout_constraintStart_toEndOf="@+id/buttonFirst"
+        app:layout_constraintTop_toBottomOf="@+id/questionsTwo"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="429dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
