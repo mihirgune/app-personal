@@ -111,20 +111,21 @@ public class ChatbotActivity extends AppCompatActivity {
         final TextView textView = new TextView(this);
         if(type==responseType) {
             lparams.gravity = Gravity.RIGHT;
-            lparams.setMargins(150,0,0,50);
+            lparams.setMargins(150,0,40,50);
             textView.setLayoutParams(lparams);
             textView.setText(text);
             textView.setBackgroundResource(R.drawable.rounded_orange_button);
 
         } else if(type==queryType) {
             lparams.gravity = Gravity.LEFT;
-            lparams.setMargins(0,0,150,50);
+            lparams.setMargins(40,0,150,50);
             textView.setLayoutParams(lparams);
             textView.setText(text);
             textView.setBackgroundResource(R.drawable.rounded_blue_button);
 
         }
         textView.setTextSize(20);
+        textView.setPadding(15,15,15,15);
         return textView;
     }
 

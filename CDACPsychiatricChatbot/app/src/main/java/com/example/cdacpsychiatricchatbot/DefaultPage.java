@@ -9,12 +9,17 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class DefaultPage extends Fragment {
 
     Button loginButton,signUpButton;
-
+    Spinner spinnerOne;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -22,6 +27,15 @@ public class DefaultPage extends Fragment {
 
         loginButton = (Button) v.findViewById(R.id.loginButton);
         signUpButton = (Button) v.findViewById(R.id.signUpButton);
+
+        //setting up the spinner
+        String [] values =
+                {":","Settings","User Analysis",};
+        spinnerOne = (Spinner) v.findViewById(R.id.spinnerOne);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(), android.R.layout.simple_spinner_item, values);
+        adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        spinnerOne.setAdapter(adapter);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override

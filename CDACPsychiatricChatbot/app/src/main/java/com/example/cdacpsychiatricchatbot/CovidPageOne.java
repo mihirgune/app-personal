@@ -37,6 +37,8 @@ public class CovidPageOne extends Fragment {
         editTextOne = (EditText) v.findViewById(R.id.editTextOne);
         enterOne = (Button) v.findViewById(R.id.enterOne);
 
+        questionsOne.setText("Enter your age");
+
         enterOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
