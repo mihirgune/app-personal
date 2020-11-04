@@ -63,7 +63,7 @@ public class ChatbotActivity extends AppCompatActivity {
     }
 
     private void openPHQ9decider() {
-        Intent intent = new Intent(this, Phq_9DeciderActivity.class);
+        Intent intent = new Intent(this,Phq9TesterActivity.class);
         startActivity(intent);
     }
 

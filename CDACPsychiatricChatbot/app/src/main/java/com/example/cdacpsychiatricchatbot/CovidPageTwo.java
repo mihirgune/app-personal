@@ -134,7 +134,6 @@ public class CovidPageTwo extends Fragment {
     @Override
     public void onDetach() {
         super.onDetach();
-
         listener = null;
     }
 }

@@ -32,7 +32,7 @@ from tensorflow import keras
 # Get the data from file
 def get_all_conversations():
     all_conversations = []
-    with codecs.open("C:/Users/dell/Desktop/movie_lines.txt", "rb", encoding="utf-8", errors="ignore") as f:
+    with codecs.open("D:/BE Project/Final App/CDACPsychiatricChatbot/Coding Part (Implementation)/Seq2Seq Transformer/Cornell Movie Dataset/cornell movie-dialogs corpus/movie_lines.txt", "rb", encoding="utf-8", errors="ignore") as f:
     
         # split corpus line line
         lines = f.read().split("\n")
@@ -198,7 +198,7 @@ questions, answers = get_clean_q_and_a(conversation_dictionary)
 
 # load the model and keras hidden layes
 # load the model
-model = keras.models.load_model('C:/Users/dell/Desktop/model_2.h5')
+model = keras.models.load_model('D:/BE Project/Final App/CDACPsychiatricChatbot/Coding Part (Implementation)/Seq2Seq Transformer/Flask/Model Data/model_2.h5')
     
 # load all the layers
 enc_inputs = model.layers[0].output

@@ -14,8 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Phq_9TesterActivity"></activity>
-        <activity android:name=".Phq_9DeciderActivity" />
+        <activity android:name=".Phq9TesterActivity"></activity>
         <activity android:name=".HomeActivity" />
         <activity android:name=".CovidTesterActivity" />
         <activity android:name=".ChatbotActivity" />
