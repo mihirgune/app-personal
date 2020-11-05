@@ -8,4 +8,13 @@
     <string name="askSkipMeal">Have your skipped a meal in the last week?</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="phq9QuestionOne">How often have you not found interest or pleasure in doing things?</string>
+    <string name="phq9QuestionTwo">How often do you feel down or depressed or hopeless?</string>
+    <string name="phq9QuestionThree">How often do you feel sleepy?</string>
+    <string name="phq9QuestionFour">How often do you feel tired?</string>
+    <string name="phq9QuestionFive">How often do you have a poor appetite and not feel like eating anything?</string>
+    <string name="phq9QuestionSix">How often do you feel bad for yourself or think that you are a failure?</string>
+    <string name="phq9QuestionSeven">How often do you have trouble concentrating on things?</string>
+    <string name="phq9QuestionEight">How often are you anxious while talking to other people?</string>
+    <string name="phq9QuestionNine">How often do you think about ending your life, or about hurting yourself?</string>
 </resources>
